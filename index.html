@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather APP By Cristina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather APP by Cristina</title>
+    <style>
+        h1, h2, h3, h4 {
+        text-align: center;  }
+
+        h4{
+            color:#177CFF
+      
+
+        }
+
+
+        .humidity {
+            text-align: center;
+            color: #FF227A;
+ 
+        }
+
+         .wind {
+            text-align: center;
+            color: #FF227A;
+ 
+        }
+
+        .high{
+            text-align: left;
+            color: #177CFF;
+        }
+
+         .low{
+            text-align: left;
+            color: #FF227A;
+        }
+
+        .recommendation{
+            font-style: italic;
+        }
+
+        .row2{
+            color: #177CFF;
+            font-weight: bold   ;
+        }
+
+        .row3{
+            font-size: large;
+        }
+
+        .row4{
+            color:#FF227A
+        }
+
+        .row5{
+            color: #177CFF;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <br/>
+    <form id="search-form">
+      <input type="text" placeholder="Enter your city here" autofocus="on" id="city-input"/>
+      <input type="submit" value="Search" />
+      <input type="submit" value="Here" id="current-location-button"/>
+    </form>
+    <h1 >📍<span id="city"></span></h1>
+    <h2>Monday 10:14 am, March 20th</h2>
+    <h3 ><span class="temperature" id="temperature"></span>°C</h3>
+    <!--<h3> <span class= temperature id="temperature"> 23 </span> <span class="units"><a href="#" id="ceLink">  °C </a> </span> |<a href="#" id="faLink">  °F </a>  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/078/110/original/UX__SHE_CODES-sin_fondo.png?1682027538" width="100px"  alt="sunny icon" class="sunny-icon"/></h3> -->
+   
+    <h4 id="description">  </h4>
+    <div><p class="humidity"> Humidity: <span  id="humidity"></span> % </p> 
+    
+    <!--<span>UV Index:High</span>-->
+    
+  </div>
+    <p class="wind"> Wind: <span id="wind"></span>  Km/h </p>
+  
+
+    <div> Forecast</div>
+
+    <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row1">
+    <div class="col">21/03</div>
+    <div class="col">22/03</div>  
+    <div class="col">23/03</div>
+    <div class="col">24/03</div>
+    <div class="col">25/03</div>
+    <div class="col">26/03</div>
+  </div>
+
+
+  <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row2">
+    <div class="col">Tuesday</div>
+    <div class="col">Wednesday</div>
+    <div class="col">Thursday</div>
+    <div class="col">Friday</div>
+    <div class="col">Saturday</div>
+    <div class="col">Sunday</div>
+  </div>
+</div>
+
+
+  <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row3">
+    <div class="col">🌤</div>
+    <div class="col">🌤</div>
+    <div class="col">🌦</div>
+    <div class="col">⛅</div>
+    <div class="col">🌞</div>
+    <div class="col">🌥</div>
+  </div>
+</div>
+
+<div class="high"> H: </div>
+
+  <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row4">
+    <div class="col">24°C</div>
+    <div class="col">25°C</div>
+    <div class="col">25°C</div>
+    <div class="col">26°C</div>
+    <div class="col">24°C</div>
+    <div class="col">25°C</div>
+  </div>
+</div>
+
+<div class="low"> L: </div>
+
+ <div class="container text-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 row5">
+    <div class="col">19°C</div>
+    <div class="col">20°C</div>
+    <div class="col">18°C</div>
+    <div class="col">18°C</div>
+    <div class="col">18°C</div>
+    <div class="col">18°C</div>
+  </div>
+</div>
+
+</div>
+</br>
+</br>   
+<div class="recommendation"> *Recommendation: Wear a hat and Sunscreen</div>
+</div>
+<script src="src/script.js">
+
+</script>
+  </body>
+</html>

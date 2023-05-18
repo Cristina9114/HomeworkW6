@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  color: #177cff;
+}
+
+.humidity {
+  text-align: center;
+  color: #ff227a;
+}
+
+.wind {
+  text-align: center;
+  color: #ff227a;
+}
+
+.high {
+  text-align: left;
+  color: #177cff;
+}
+
+.low {
+  text-align: left;
+  color: #ff227a;
+}
+
+.recommendation {
+  font-style: italic;
+}
+
+.row2 {
+  color: #177cff;
+  font-weight: bold;
+}
+
+.row3 {
+  font-size: large;
+}
+
+.row4 {
+  color: #ff227a;
+}
+
+.row5 {
+  color: #177cff;
+}
